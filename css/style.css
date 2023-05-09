@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+*,
+*::before,
+*::after {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    background: #A5E3E9;
+} 
+
+::selection {
+    background-color: #0b372dbb;
+}
+
+.logo {
+    width: 170px;
+}
+
+header {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+header nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+
+.search a {
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+
+.search a span {
+    margin-top: 5%;
+}
+
+.hamburger {
+    padding-left: 1.5rem;
+}
+
+.hamburger a {
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger .bar {
+    position: relative;
+    width: 52%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before {
+    top: -6px;
+}
+
+.hamburger .bar::after {
+    top:  5.5px;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: cubic-bezier(.28,.63,.32,.99);
+}
+
+.viniette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: 
+        radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%,
+        rgba(0, 0, 0, 0.7));
+    pointer-events: none;
+}
+
+.bg-img {
+    position: absolute;
+    width: 195%;
+    top: calc(50% - 310px);
+    left: calc(50% + 65px);
+    z-index: 1;
+}
+
+.fog-7 {
+    position: absolute;
+    z-index: 2;
+    width: 1900px;
+    top: calc(50% - 100px);
+    left: calc(50% + 300px);
+}
+
+.mountain-10 {
+    position: absolute;
+    z-index: 3  ;
+    width: 892px;
+    top: calc(50% + 74px);
+    left: calc(50% + 230px);
+   
+}
+
+.fog-6 {
+    position: absolute;
+    z-index: 4;
+    width: 1600px;
+    top: calc(50% + 237px);
+    left: calc(50% + 148px);
+} 
+
+.mountain-9 {
+    position: absolute;
+    z-index: 5;
+    width: 470px;
+    top: calc(50% + 130px);
+    left: calc(50% - 533px);
+} 
+
+.mountain-8 {
+    position: absolute;
+    z-index: 6;
+    width: 810px;
+    top: calc(50% + 114px);
+    left: calc(50% - 209px);
+} 
+
+.fog-5 {
+    position: absolute;
+    z-index: 7;
+    width: 450px;
+    top: calc(50% + 150px);
+    left: calc(50% - 600px);
+} 
+
+.mountain-7 {
+    position: absolute;
+    z-index: 8;
+    width: 730px;
+    top: calc(50% + 261px);
+    left: calc(50% - 657px);
+} 
+ 
+.text {
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 110px);
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    pointer-events: auto;
+    user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+}
+
+.text h2 {
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 0.88;
+}
+
+.text h1 {
+    font-weight: 800;
+    font-size: 9rem;
+    line-height: 0.88;
+}
+
+
+.mountain-6 {
+    position: absolute;
+    z-index: 10;
+    top: calc(50% + 112px);
+    left: calc(50% + 616px);
+    width: 408px;
+}
+
+.fog-4 {
+    position: absolute;
+    z-index: 11;
+    top: calc(50% + 240px);
+    left: calc(50% - 70px);
+    width: 590px;
+}
+
+.mountain-5 {
+    position: absolute;
+    z-index: 12;
+    top: calc(50% + 270px);
+    left: calc(50% + 170px);
+    width: 625px;
+}
+
+.fog-3 {
+    position: absolute;
+    z-index: 13;
+    top: calc(50% + 310px);
+    left: calc(50% - 105px);
+    width: 1600px;
+}
+
+.mountain-4 {
+    position: absolute;
+    z-index: 14;
+    top: calc(50% + 226px);
+    left: calc(50% - 450px);
+    width: 735px;
+}
+
+.mountain-3 {
+    position: absolute;
+    z-index: 15;
+    top: calc(50% + 170px);
+    left: calc(50% + 750px);
+    width: 418px;
+}
+
+.fog-2 {
+    position: absolute;
+    z-index: 16;
+    top: calc(50% + 247px);
+    left: calc(50% - 460px);
+    width: 418px;
+}
+
+.mountain-2 {
+    position: absolute;
+    z-index: 17;
+    top: calc(50% + 180px);
+    left: calc(50% + 420px);
+    width: 680px;}
+
+.mountain-1 {
+    position: absolute;
+    z-index: 18;
+    top: calc(50% + 65px);
+    left: calc(50% - 790px);
+    width: 515px;
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.fog-1 {
+    position: absolute;
+    z-index: 21;
+    top: calc(50% + 260px);
+    left: 50%;
+    width: 1800px;
+}
+
+@media (max-width: 1100px) {
+    .text h1 {
+        font-size: 5.8rem;
+    }
+
+    .text h2 {
+        font-size: 4.7rem;
+    }
+}
+
+@media (max-width: 725px) {
+    .text h1 {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .text h2 {
+        font-size: 4.1rem;
+        line-height: 1.1;
+    }
+
+    header nav {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    header ul a {
+        font-size: 0.73rem;
+        padding: 0 0.9rem;
+    }
+
+    .search a {
+        font-size: 0.85rem;
+        padding: 0 1.8rem;
+    }
+
+    .hamburger {
+        padding-left: 0.9rem; 
+    }
+
+    .hamburger a {
+        height: 30px;
+        width: 30px;
+    }
+}
