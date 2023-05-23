@@ -82,7 +82,6 @@ header ul a {
     border-radius: 50%;
     background-color: rgba(115, 115, 115, 0.7);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
 }
